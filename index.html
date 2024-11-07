@@ -1,0 +1,106 @@
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 03</title>
+
+    <!-- Google Font CDN  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+
+  <!-- DaisyUi CDN  -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Remix Icon CDN  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.5.0/remixicon.css"
+    integrity="sha512-6p+GTq7fjTHD/sdFPWHaFoALKeWOU9f9MPBoPnvJEWBkGS4PKVVbCpMps6IXnTiXghFbxlgDE8QRHc3MU91lJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Custom Config  -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    .manrope {
+      font-family: "Manrope", sans-serif;
+    }
+  </style>
+</head>
+<body class="manrope">
+
+     <!-- ===============================Header Section Starts====================== -->
+
+  <header class="w-full bg-[#F4F4F4] p-4">
+    <div class="container mx-auto flex items-center justify-between">
+
+      <!-- Logo Side -->
+      <div class="flex items-center space-x-2">
+        <div class="w-7 h-7  rounded-full flex items-center justify-center bg-[#ABEF5F] text-black">
+          <i class="ri-arrow-right-up-line"></i>
+        </div>
+        <h2 class="text-black font-bold text-xl">Rinterio</h2>
+      </div>
+
+      <!-- Menu Side -->
+      <div class="hidden lg:flex space-x-6">
+        <a href="#" class="text-black font-extrabold hover:text-gray-400">
+          Home
+        </a>
+        <a href="#" class="text-black hover:text-gray-400">
+          Services
+        </a>
+        <a href="#" class="text-black hover:text-gray-400">
+          Portfolio
+        </a>
+        <a href="#" class="text-black hover:text-gray-400">
+          Blogs
+        </a>
+        <a href="#" class="text-black hover:text-gray-400">
+          Contact Us
+        </a>
+      </div>
+
+      <!-- Icons -->
+      <div class="hidden lg:flex items-center space-x-4">
+        <div
+          class="w-7 h-7  rounded-full flex items-center justify-center bg-white text-black drop-shadow-xl cursor-pointer">
+          <i class="ri-shopping-cart-2-line"></i>
+        </div>
+        <div
+          class="w-7 h-7  rounded-full flex items-center justify-center bg-white text-black drop-shadow-xl cursor-pointer">
+          <i class="ri-search-2-line"></i>
+        </div>
+
+        <!-- Button Side -->
+        <button class="flex items-center bg-lime-300 text-black font-bold px-4 py-2 rounded-full hover:bg-lime-200">
+          Book Consult
+          <div class="ml-2 w-6 h-6  rounded-full flex items-center justify-center bg-black text-white">
+            <i class="ri-arrow-right-up-line"></i>
+          </div>
+        </button>
+      </div>
+
+      <!-- Menu Icon Only For Mobile-->
+      <div class="flex items-center lg:hidden">
+        <div
+          class="w-10 h-10 bg-white rounded-full flex items-center justify-center text-black cursor-pointer hover:bg-[#f6f6f6]">
+          <i class="ri-menu-line"></i>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===============================Header Section Ends========================= -->
+    
+</body>
+</html>
